@@ -1,0 +1,46 @@
+<div class="mx-3 my-3">
+  <h4>Custom Operator</h4>
+  <br>
+
+  <strong>OF </strong>operature Usecase
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col md-6">
+        <div class="card">
+          <div class="card-header"><strong>Example O1 (Maual):</strong></div>
+          <div class="card-body ">
+            <ul id="elContainer"
+              [ngClass]="techStatus == 'completed' ? 'alert alert-success' : techStatus == 'error' ? 'alert alert-danger': ''">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col md-6">
+        <div class="card">
+          <div class="card-header"><strong>Example O2:</strong> customer interval observable</div>
+          <div class="card-body">
+            <ul id="elContainer2"
+              [ngClass]="techStatus2 == 'completed' ? 'alert alert-success' : techStatus2 == 'error' ? 'alert alert-danger': ''">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col md-12">
+        <div class="card">
+          <div class="card-header"><strong>Example O3:</strong> Randon Names: 'Rupesh','Apoorv','Sankalp','Pisyuh','Eric','Madarchod'</div>
+          <div class="card-body">
+            <p>Current Name: <strong>{{currentName}}</strong></p>
+              <span class="badge badge-primary"  [ngClass]="techStatus3 == 'completed' ? 'badge badge-success' : techStatus3 == 'error' ? 'badge badge-danger': ''">{{currentNameStatus}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- container ends-->
+
+</div>
+<!--mx div ends -->
