@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PromiseComponent } from './promise/promise.component';
@@ -15,6 +15,10 @@ import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { MapComponent } from './observable/map/map.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TakeComponent } from './observable/take/take.component';
+import { RetryComponent } from './observable/retry/retry.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
+import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +34,15 @@ import { TakeComponent } from './observable/take/take.component';
     ToArrayComponent,
     MapComponent,
     FilterComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent,
+    DebounceComponent,
+    ConcatmapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

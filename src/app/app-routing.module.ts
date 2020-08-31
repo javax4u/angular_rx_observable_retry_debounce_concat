@@ -11,6 +11,9 @@ import { CustomComponent } from './observable/custom/custom.component';
 import { MapComponent } from './observable/map/map.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TakeComponent } from './observable/take/take.component';
+import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
+import { DebounceComponent } from './observable/debounce/debounce.component';
+import { RetryComponent } from './observable/retry/retry.component';
 
 const routes: Routes = [
   {path:'promise', component:PromiseComponent},
@@ -23,7 +26,10 @@ const routes: Routes = [
     {path:'custom',component:CustomComponent},
     {path:'map',component:MapComponent},
     {path:'filter',component:FilterComponent},
-    {path:'take',component:TakeComponent}
+    {path:'take',component:TakeComponent},
+    {path:'concatmap',component:ConcatmapComponent},
+    {path:'debounce',component:DebounceComponent},
+    {path:'retry',component:RetryComponent}
   ]},
   {path:'**',redirectTo:'promise'}
 ];
