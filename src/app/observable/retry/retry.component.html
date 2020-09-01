@@ -1,3 +1,34 @@
-<p>
-  retry works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Retry RetryWhen Scan Delay</strong>
+      <div class="table" *ngIf="person">
+        <tr>
+          <td>Name</td>
+          <td>{{person.firstName}}</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{person.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>{{person.phone}}</td>
+        </tr>
+
+      </div>
+    </div>
+
+  </div>
+  <button class="btn btn-primary" type="button" (click)="fetchDetails()">
+    <span *ngIf="fetchingStatus == 0" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Fetch Details
+  </button><br>
+  <p>
+    Status: <strong [ngClass]="{
+     'text-success' : fetchingStatus == 1,
+     'text-danger' : fetchingStatus == 2
+    }">{{statusMessage}}</strong>
+
+  </p>
+</div>
