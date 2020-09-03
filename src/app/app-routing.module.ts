@@ -14,6 +14,8 @@ import { TakeComponent } from './observable/take/take.component';
 import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { RetryComponent } from './observable/retry/retry.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { ReplayComponent } from './observable/replay/replay.component';
 
 const routes: Routes = [
   {path:'promise', component:PromiseComponent},
@@ -29,7 +31,9 @@ const routes: Routes = [
     {path:'take',component:TakeComponent},
     {path:'concatmap',component:ConcatmapComponent},
     {path:'debounce',component:DebounceComponent},
-    {path:'retry',component:RetryComponent}
+    {path:'retry',component:RetryComponent},
+    {path:'subject',component:SubjectComponent},
+    {path:'replay',component:ReplayComponent}
   ]},
   {path:'**',redirectTo:'promise'}
 ];

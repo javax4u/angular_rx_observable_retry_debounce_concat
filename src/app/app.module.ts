@@ -18,6 +18,11 @@ import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
 import { DebounceComponent } from './observable/debounce/debounce.component';
 import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Component1Component } from './observable/subject/component1/component1.component';
+import { Component2Component } from './observable/subject/component2/component2.component';
+import { Component3Component } from './observable/subject/component3/component3.component';
+import { ReplayComponent } from './observable/replay/replay.component';
 
 
 @NgModule({
@@ -37,7 +42,12 @@ import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
     TakeComponent,
     RetryComponent,
     DebounceComponent,
-    ConcatmapComponent
+    ConcatmapComponent,
+    SubjectComponent,
+    Component1Component,
+    Component2Component,
+    Component3Component,
+    ReplayComponent
   ],
   imports: [
     BrowserModule,

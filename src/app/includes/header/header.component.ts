@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignUtilityService } from 'src/app/appServices/design-utility.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  navOpen:boolean=false;
+
+  exclusive:boolean=false;
+
+  constructor(private designUtility:DesignUtilityService) { }
 
   ngOnInit() {
+
+    this.designUtility.exclusive.subscribe(res => {
+      this.exclusive=res;
+    });
   }
 
 }
